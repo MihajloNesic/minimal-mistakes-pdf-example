@@ -15,10 +15,14 @@ categories: jekyll plugin
 
 ---
 
+Base URL must be present if `baseurl` is set in `_config.yml`.
+In this example, `minimal-mistakes-pdf-example` is prepended to file location `/files/dummy.pdf`.
+
+
 {% highlight ruby %}
 {% raw %}
-{% pdf "https://mihajlonesic.gitlab.io/files/loremipsum.pdf" no_link height=300px %}
+{% pdf "/minimal-mistakes-pdf-example/files/dummy.pdf" no_link height=300px %}
 {% endraw %}
 {% endhighlight %}
 
-{% pdf "https://mihajlonesic.gitlab.io/files/loremipsum.pdf" no_link height=300px %}
+{% pdf "/minimal-mistakes-pdf-example/files/dummy.pdf" no_link height=300px %}
